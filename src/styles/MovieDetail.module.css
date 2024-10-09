@@ -1,0 +1,91 @@
+.movieDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the content */
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    max-width: 800px;
+    /* Max width for large screens */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.title {
+    font-size: 2rem;
+    /* Increase font size for title */
+    margin-bottom: 10px;
+    /* Space below the title */
+    color: #333;
+    /* Darker text color for better readability */
+    text-align: center;
+    /* Center title */
+}
+
+.poster {
+    max-width: 100%;
+    /* Responsive width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners for the poster */
+    margin-bottom: 20px;
+    /* Space below the poster */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for poster */
+}
+
+.details {
+    text-align: left;
+    /* Align text to the left for details */
+    font-size: 1.2rem;
+    /* Slightly increase font size for details */
+    color: #555;
+    /* Medium gray for details */
+    width: 100%;
+    /* Make details section responsive */
+}
+
+.error {
+    color: red;
+    /* Error message in red color */
+    text-align: center;
+    /* Center align error message */
+    font-size: 1.5rem;
+    /* Increase font size for error */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+        /* Smaller title on smaller screens */
+    }
+
+    .details {
+        font-size: 1rem;
+        /* Adjust font size for details */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.25rem;
+        /* Even smaller title on mobile */
+    }
+
+    .poster {
+        max-width: 90%;
+        /* Reduce max width for mobile */
+    }
+
+    .details {
+        font-size: 0.9rem;
+        /* Adjust font size for details */
+    }
+}
